@@ -1,3 +1,6 @@
-import Home from './home/home'
+import Home from './home/home';
+import React from 'react';
+import ReactDom from 'react-dom';
 
-console.log(Home)
+const root = document.getElementById('root')
+ReactDom.render(<Home></Home>, root)

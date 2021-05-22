@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Home = () => {
+function Home() {
+
+    
 
     return (
-        <div>Hello</div>
+        <div>Home</div>
     )
 }
 
-export default Home
+export default Home;
