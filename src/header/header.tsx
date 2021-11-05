@@ -1,16 +1,14 @@
 import React from 'react';
-import { Navbar, Container, Nav, NavDropdown, NavItem } from 'react-bootstrap';
-import "./header.css"
+import { Navbar, Button} from 'react-bootstrap';
+
+const styles = require('./header.css');
 
 function WebHeader() {
     return (
-        <header>
+        <header style={styles}>
             <Navbar bg="light" expand="lg">
-                <Container>
-                    <NavItem>Item 1</NavItem>
-                    <NavItem>Item 1</NavItem>
-                    <NavItem>Item 1</NavItem>
-                </Container>
+                <Button>Home</Button>
+                <Button>Blog</Button>
             </Navbar>
         </header>
     )
