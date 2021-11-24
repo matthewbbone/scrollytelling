@@ -2,22 +2,24 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
 import NavBar from './components/navbar/NavBar'
+import Footer from './components/footer/Footer'
 import ReactDOM from 'react-dom';
 
 class App extends Component {
 
   render() {
-    console.log("rendering")
     return (
-      <NavBar/>
       <Router>
+        <NavBar />
         <Routes>
-          <Route name="home" exact path="/" component={Home} />
+          <Route path="/" component={<div>Home</div>} />
+          <Route path="/first" component={<div>Comp 1</div>} />
+          <Route path="/second" component={<div>Comp 2</div>} />
         </Routes>
+        <Footer />
       </Router>
     )
   }
 }
-export default App;
 
 ReactDOM.render(<App />, document.querySelector("#root"));
