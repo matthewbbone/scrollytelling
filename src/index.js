@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/home/Home';
-import BlogRouter from './components/blog/BlogRouter'
-import BlogPost from './components/blog/BlogPost'
+import Blog from './components/blog/Blog'
 import NavBar from './components/navbar/NavBar'
 import Footer from './components/footer/Footer'
 import ReactDOM from 'react-dom';
-import styles from "./index.css"
+import styles from "./index.module.css"
 
 class App extends Component {
 
@@ -14,9 +13,9 @@ class App extends Component {
     return (
       <Router>
         <NavBar />
-        <div>
+        <div className={styles.pageView}>
           <Route exact path="/" component={Home} />
-          <Route path="/blog" component={BlogRouter} />
+          <Route path="/blog" component={Blog} />
         </div>
         <Footer />
       </Router>

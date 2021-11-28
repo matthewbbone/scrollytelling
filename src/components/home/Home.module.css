@@ -1,0 +1,11 @@
+
+.profile {
+    display: block;
+    border-radius: 10%;
+    margin: auto;
+}
+
+.bio {
+    text-align: center;
+    text-justify: auto;
+}

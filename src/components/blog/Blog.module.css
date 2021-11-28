@@ -1,0 +1,62 @@
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px
+}
+
+.thumbnail {
+    display: inline;
+    margin: 20px
+}
+
+.thumbnailLink {
+    text-decoration: none;
+}
+
+.thumbnailBox {
+    color: white;
+    text-align: center;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.thumbnailBox:hover img{
+    filter: brightness(20%);
+    transition: .3s ease-in-out
+}
+
+.thumbnailText {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0
+}
+
+.thumbnailBox:hover .thumbnailText {
+    opacity: 1;
+    transition: .3s ease-in-out
+}
+
+.blogListBox {
+    display: flex;
+    width: 100%;
+    max-height: 150px;
+}
+
+.blogList {
+    display: flex;
+    overflow-x: scroll;
+    margin: 0px;
+}
+
+.arrow {
+    margin: auto;
+    padding: 0px 5px 5px 5px;
+    cursor: pointer;
+}
+

@@ -25,32 +25,21 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     { loader: 'style-loader' },
-                    { 
+                    {
                         loader: 'css-loader',
                         options: {
-                            modules: {
-                                localIdentName: "[path]___[name]__[local]___[hash:base64:5]",
-                            },														
+                            importLoaders: 1,
+                            modules: true,
                             sourceMap: true
                         }
-                     },
-                     { 
-                        loader: 'postcss-loader',
-                        options: {
-                            postcssOptions: {
-                                plugins: [
-                                    [ 'autoprefixer', {}, ],
-                                ],
-                            },
-                        }
-                      }
+                    }
                 ]
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
                 loader: 'url-loader?limit=10000&name=img/[name].[ext]'
             }
-        ]
+        ],
     },
     devServer: {
         historyApiFallback: true,
