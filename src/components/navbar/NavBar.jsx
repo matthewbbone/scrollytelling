@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import styles from './NavBar.css';
+import './NavBar.css';
 
 class NavBar extends Component {
   render() {
     return (
-      <header styles={styles}>
-        <ul id="headerButtons">
+      <header>
+        <div className="name">Matthew B. Bone</div>
+        <ul className="headerButtons">
           <li className="navButton"><Link to="">Home</Link></li>
+          <li className="navButton"><Link to="/blog">Blog</Link></li>
         </ul>
       </header>
     )
