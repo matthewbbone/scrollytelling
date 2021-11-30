@@ -1,5 +1,6 @@
 html, body, body > div {
     width: 100%;
+    max-width: 100%;
     margin: 0px;
     background-color: rgb(38, 71, 105);
     min-height: 100vh;
@@ -14,6 +15,7 @@ body {
 
 .pageView {
     max-width: 1000px;
+    width: 100%;
     background-color: transparent;
     margin-left: auto;
     margin-right: auto;

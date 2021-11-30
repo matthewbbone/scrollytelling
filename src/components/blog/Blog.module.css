@@ -31,13 +31,27 @@
 .thumbnailText {
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0
+}
+
+.thumbnailDate {
+    position: absolute;
+    text-align: center;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0
 }
 
 .thumbnailBox:hover .thumbnailText {
+    opacity: 1;
+    transition: .3s ease-in-out
+}
+
+.thumbnailBox:hover .thumbnailDate {
     opacity: 1;
     transition: .3s ease-in-out
 }
@@ -58,5 +72,32 @@
     margin: auto;
     padding: 0px 5px 5px 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .thumbnailText {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        opacity: 1
+    }
+    
+    .thumbnailDate {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        opacity: 1
+    }
+
+    .blogListBox {
+        height: 200px
+    }
+    
+    .blogList {
+        height: 200px
+    }
+    
 }
 

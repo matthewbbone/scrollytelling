@@ -1,14 +1,11 @@
 import React, { Component, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import BlogPost from './BlogPost';
+import BlogPost from './blogPosts/BlogPost';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Blogs } from './BlogData'
+import BlogsData from './blogPosts/BlogsData'
 import styles from './Blog.module.css'
-import CommDetect from '../../assets/blogImage/commDetect.png'
 import LeftArrow from '../../assets/icons/leftarrow.jpg'
 import RightArrow from '../../assets/icons/rightarrow.jpg'
-
-
 
 const BlogThumbnail = (blog, index) => {
 
@@ -16,8 +13,9 @@ const BlogThumbnail = (blog, index) => {
         <li className={styles.thumbnail} key={index}>
             <Link className={styles.thumbnailLink} to={"/blog/" + index}>
                 <div className={styles.thumbnailBox}>
-                    <img src={CommDetect} width="150px" height="100px" />
+                    <img src={blog.thumbnail} width="150px" height="100px" />
                     <div className={styles.thumbnailText}>{blog.shortTitle}</div>
+                    <div className={styles.thumbnailDate}>{blog.date}</div>
                 </div>
             </Link>
         </li>
@@ -44,14 +42,23 @@ const BlogList = () => {
             const frame = () => {
                 ctr = ctr - .005 
                 if (scroller.current) {
+                    console.log('scrollLeft: ', scroller.current.scrollLeft)
+                    console.log('scrollWidth: ', scroller.current.scrollWidth)
+                    console.log('clientWidth: ', scroller.current.clientWidth)
                     if (
-                        scroller.current.scrollLeft >= end ||
-                        scroller.current.scrollLeft >= scroller.current.scrollWidth - 380
+                        (dir == 'right' &&
+                        (scroller.current.scrollLeft >= end ||
+                        scroller.current.scrollLeft >= scroller.current.scrollWidth - scroller.current.clientWidth - 1)) ||
+                        (dir == 'left' &&
+                        (scroller.current.scrollLeft <= end ||
+                        scroller.current.scrollLeft <= 0))
                     ) {
                         clearInterval(int);
                         return null
-                    } else {
+                    } else if (dir == 'right') {
                         scroller.current.scrollLeft = scroller.current.scrollLeft + Math.pow(ctr, 4)
+                    } else {
+                        scroller.current.scrollLeft = scroller.current.scrollLeft - Math.pow(ctr, 4)
                     }
                 }
             }
@@ -63,7 +70,7 @@ const BlogList = () => {
         <div className={styles.blogListBox}>
             <img className={styles.arrow} src={LeftArrow} width="15px" height="30px" onClick={() => scroll('left')}/>
             <ul className={styles.blogList} ref={scroller}>
-                {Blogs.map((b, index) => {
+                {BlogsData.map((b, index) => {
                     return BlogThumbnail(b, index)
                 })}
             </ul>
@@ -82,4 +89,5 @@ class Blog extends Component {
         )
     }
 }
+
 export default Blog;
