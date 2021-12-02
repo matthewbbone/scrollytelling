@@ -1,7 +1,7 @@
 import React, { Component, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import BlogPost from './blogPosts/BlogPost';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import BlogsData from './blogPosts/BlogsData'
 import styles from './Blog.module.css'
 import LeftArrow from '../../assets/icons/leftarrow.jpg'
