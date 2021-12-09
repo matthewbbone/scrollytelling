@@ -3,6 +3,26 @@ h1 {
     text-align: center;
 }
 
+a {
+    color: white
+}
+
+a:visited {
+    color: pink
+}
+
+.titlePic {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    height: 300px
+}
+
+.italic {
+    font-style: italic;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px
