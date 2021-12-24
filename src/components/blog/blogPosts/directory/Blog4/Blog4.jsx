@@ -34,6 +34,9 @@ class Blog4 extends Component {
                     <img src={Whitehead} style={{width: "150px", margin: "20px"}}/>
                 </div>
                 <iframe src='https://matthewbbone.github.io/matthewbbone/philosophernet.html' className={blogStyles.dataView} scrolling="no"></iframe>
+                <p>
+                My goal for this project was to get some experience with webscraping and to develop an original network that I can use for future projects. Additionally, creating this visualization helped me to learn some basic network visualization tools like the visNetwork package in R and gephi. I was surprised at how simple webscraping actually was, however, handling non-standardized dates for birth and death required a lot of iterative fixes to my data collection process before I got sufficiently consistent date extractions. There’s definitely some improvements that could be made to this dataset, like capturing the last few dates that I failed to extract. Additionally, it would be feasible to collect significantly more information from the wikipedia pages but I’m dissuaded by the amount of work it took to extract something as simple as dates. However, I do hope to comeback to this network in the future.
+                </p>
             </div>
         )
     }
