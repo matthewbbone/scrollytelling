@@ -33,7 +33,7 @@ class Blog4 extends Component {
                     </div>
                     <img src={Whitehead} style={{width: "150px", margin: "20px"}}/>
                 </div>
-                <iframe src='https://www.matthewbbone.com/philosophernet.html' className={blogStyles.dataView} scrolling="no"></iframe>
+                <iframe src='https://matthewbbone.github.io/matthewbbone/philosophernet.html' className={blogStyles.dataView} scrolling="no"></iframe>
             </div>
         )
     }
