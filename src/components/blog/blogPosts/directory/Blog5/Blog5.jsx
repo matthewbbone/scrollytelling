@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import DetectPic from './assets/detectionPic.png'
 import blogStyles from '../../../Blog.module.css'
-var Detect = require('./assets/detect.html')
 
 class Blog5 extends Component {
     render() {

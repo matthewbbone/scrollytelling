@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import blogStyles from '../../../Blog.module.css'
 import Whitehead from './assets/whitehead.png'
-import PhilosopherNet from './assets/philosophernet.html'
-import parse from 'html-react-parser'
 
 class Blog4 extends Component {
     render() {
