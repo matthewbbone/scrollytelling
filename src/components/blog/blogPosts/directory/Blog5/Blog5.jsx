@@ -58,7 +58,7 @@ class Blog5 extends Component {
                 <p>
                     The algorithm works by choosing N communities and randomly choosing N nodes to assign a community. Then it iterates through the nodes in a random order and uses a localized evaluation to determine whether each node should be assigned a new community. The evaluation looks at all of the nodes neighbors and for each community that’s represented in the group of neighboring nodes, the number of neighboring nodes that belong to that community are summed and weighted by the communities density. The density is the inverse of the global number of nodes in the community. The community that has the largest weighted sum amongs the neighbors is the node’s new community. Ties go to the node’s original community else randomly selected from the tied communities. This method is inspired by the physics of fluid or gaseous material which expand to fill the space (in this case the graph).
                 </p>
-                <iframe src='https://www.matthewbbone.com/detect.html' className={blogStyles.dataView} scrolling="no"></iframe>
+                <iframe src='https://matthewbbone.github.io/matthewbbone/detect.html' className={blogStyles.dataView} scrolling="no"></iframe>
             </div>
         )
     }
