@@ -8,7 +8,7 @@ a {
 }
 
 a:visited {
-    color: pink
+    color: white
 }
 
 .titlePic {
@@ -16,16 +16,32 @@ a:visited {
     margin-right: auto;
     margin-left: auto;
     width: 400px;
-    height: 300px
+    height: auto
+}
+
+.articlePic {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: auto;
+}
+
+.centerDisplay {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.dataView {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 500px
 }
 
 .italic {
     font-style: italic;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px
 }
 
 .thumbnail {

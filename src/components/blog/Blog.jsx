@@ -42,9 +42,6 @@ const BlogList = () => {
             const frame = () => {
                 ctr = ctr - .005 
                 if (scroller.current) {
-                    console.log('scrollLeft: ', scroller.current.scrollLeft)
-                    console.log('scrollWidth: ', scroller.current.scrollWidth)
-                    console.log('clientWidth: ', scroller.current.clientWidth)
                     if (
                         (dir == 'right' &&
                         (scroller.current.scrollLeft >= end ||

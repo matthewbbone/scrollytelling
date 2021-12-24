@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import blogStyles from '../../../Blog.module.css'
 
 class Blog0 extends Component {
     render() {
@@ -11,6 +12,7 @@ class Blog0 extends Component {
                 <p>
                     The first plot shows the mobility trends for different classes of areas such as Residential, Workplace, and other categories. The value is the percent change in activity from baseline measurements. For instance, if the value is 50, there has been a 50% increase in mobility, alternatively if there was a -50 there has been a 50% decrease in mobility. The second plot shows the number of cases over the same time period.
                 </p>
+                <iframe src='https://www.matthewbbone.com/covidplot.html' className={blogStyles.dataView} scrolling="no"></iframe>
             </div>
         )
     }

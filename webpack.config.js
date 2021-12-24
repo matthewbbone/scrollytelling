@@ -16,6 +16,15 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
+            },
+            {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
@@ -37,7 +46,10 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
-                loader: 'url-loader?name=img/[name].[ext]'
+                loader: 'url-loader',
+                options: {
+                    name: 'img/[name].[ext]'
+                }
             }
         ],
     },
