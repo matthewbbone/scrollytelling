@@ -14,9 +14,8 @@ class App extends Component {
       <Router>
         <NavBar />
         <div className={styles.pageView}>
-          <Route exact path="/" component={Home} />
-          <Route path="/blog" component={Blog} />
-          <Redirect to="/" />
+          <Home/>
+          <Blog/>
         </div>
         <Footer />
       </Router>

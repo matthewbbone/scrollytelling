@@ -11,7 +11,7 @@ const BlogThumbnail = (blog, index) => {
 
     return (
         <li className={styles.thumbnail} key={index}>
-            <Link className={styles.thumbnailLink} to={"/blog/" + index}>
+            <Link className={styles.thumbnailLink} to={"/" + index}>
                 <div className={styles.thumbnailBox}>
                     <img src={blog.thumbnail} width="150px" height="100px" />
                     <div className={styles.thumbnailText}>{blog.shortTitle}</div>
@@ -81,7 +81,7 @@ class Blog extends Component {
         return (
             <div>
                 <BlogList />
-                <Route exact path="/blog/:id" component={BlogPost} />
+                <Route path="/:id" component={BlogPost} />
             </div>
         )
     }
