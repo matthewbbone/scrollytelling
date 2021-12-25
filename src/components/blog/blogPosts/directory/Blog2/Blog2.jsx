@@ -6,7 +6,7 @@ class Blog2 extends Component {
     render() {
         return (
             <div>
-                <h1>Language Competition:<br />An Abrams-Strogatz inspired agent-based model</h1>
+                <h1>Numbers don't lie...</h1>
                 <img src={Police} className={blogStyles.titlePic} />
                 <p>
                     Over the past week or so America has seen a wave of in-person protests and well-intended social media posts in the wake of George Floyd’s death. Often unverified information about racial inequality, systematic injustice, and police brutality has overwhelmed everyone’s news and social media feeds whether liberal or conservative.
