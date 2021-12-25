@@ -7,7 +7,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <Link to={"/"}>
+        <Link to={""}>
           <div className={styles.profileBlock}>
             <img className={styles.profile} src={Profile} width="200px" height="200px" />
             <div className={styles.title}>
