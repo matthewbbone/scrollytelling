@@ -1,7 +1,6 @@
 import React, { Component, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route, Redirect } from 'react-router-dom';
 import BlogPost from './blogPosts/BlogPost';
-import { Route } from 'react-router-dom';
 import BlogsData from './blogPosts/BlogsData'
 import styles from './Blog.module.css'
 import LeftArrow from '../../assets/icons/leftarrow.jpg'
@@ -82,6 +81,7 @@ class Blog extends Component {
             <div>
                 <BlogList />
                 <Route path="/:id" component={BlogPost} />
+                <Redirect path="/" />
             </div>
         )
     }
