@@ -23,9 +23,8 @@ header {
     margin: 10px
 }
 
-header a {
+header > a {
     color: white;
-    text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
