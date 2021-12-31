@@ -7,15 +7,6 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <div className={styles.socialLinks}>
-          <div>matthewbbone@gmail.com</div>
-          <a href="https://www.linkedin.com/in/matthew-bone-05a73a160/" target="_blank">
-            <img src={LinkedIn} width="20px" height="20px" className={styles.social} />
-          </a>
-          <a href="https://github.com/matthewbbone" target="_blank">
-            <img src={Github} width="20px" height="20px" className={styles.social} />
-          </a>
-        </div>
       </footer>
     )
   }
