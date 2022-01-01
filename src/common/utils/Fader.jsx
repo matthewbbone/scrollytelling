@@ -1,6 +1,5 @@
 
 const Fader = (active, progress, fadeThreshold) => {
-    console.log(active)
     return (
         !active ? 0 :
         progress < fadeThreshold ? progress / fadeThreshold :
