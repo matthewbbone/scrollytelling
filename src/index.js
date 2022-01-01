@@ -11,11 +11,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <NavBar />
         <div className={styles.pageView}>
           <Home/>
         </div>
-        <Footer />
       </Router>
     )
   }
