@@ -9,6 +9,7 @@ import Section1Image from '../../assets/photos/services.jpg'
 import Section2Image from '../../assets/photos/network.jpg'
 import Section3Image from '../../assets/photos/together.jpg'
 import Section4Image from '../../assets/photos/market.jpg'
+import Section from './Section0'
 
 export const Directory = [
     Section0,

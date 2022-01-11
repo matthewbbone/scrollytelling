@@ -8,9 +8,10 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router> 
         <div className={styles.pageView}>
           <Home/>
+          <div></div>
         </div>
       </Router>
     )

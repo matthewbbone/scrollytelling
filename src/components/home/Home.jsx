@@ -3,8 +3,7 @@ import { Scrollama, Step } from 'react-scrollama';
 import Fader from '../../common/utils/Fader'
 import { Directory, ImageDirectory} from '../ScrollSections/Directory'
 import styles from './Home.module.css'
-
-import LanguagePic from '../../assets/photos/language.jpg'
+import Logo from '../../assets/icons/logo.png'
 
 const ScrollLayer = () => {
 
@@ -51,6 +50,9 @@ class HomePage extends Component {
   render() {
     return (
       <div>
+        <div className={styles.title} >
+            <img src={Logo} className={styles.titleImage}/>
+        </div>
         <ScrollLayer />
       </div>
     )
