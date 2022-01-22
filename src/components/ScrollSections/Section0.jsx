@@ -2,7 +2,7 @@ import React from 'react'
 import Language from '../../assets/infographics/language.png'
 import Fader from '../../common/utils/Fader'
 import styles from './Sections.module.css'
-import Pictogram from '../visualizations/pictogram'
+import Pictogram from '../visualizations/Pictogram'
 import Arabica from '../../assets/icons/arabica.png'
 import Robusta from '../../assets/icons/robusta.png'
 
@@ -31,14 +31,14 @@ const Section = ({ active, progress }) => {
                     <p>
                         With over 7,000 Q Arabica and Q Robusta Graders worldwide – and counting – it is no surprise that the Q Program has been integrated into hundreds of companies around the world.
                     </p>
-                    {/* <Pictogram
+                    <Pictogram
                         progress={progress}
                         count={70}
                         groups={groupDict}
                         numRows={8}
                         width={400}
                         element={'section0'}>
-                    </Pictogram> */}
+                    </Pictogram>
                 </div>
             </div>
         </div>
