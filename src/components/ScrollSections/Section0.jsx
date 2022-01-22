@@ -31,14 +31,14 @@ const Section = ({ active, progress }) => {
                     <p>
                         With over 7,000 Q Arabica and Q Robusta Graders worldwide – and counting – it is no surprise that the Q Program has been integrated into hundreds of companies around the world.
                     </p>
-                    {/* <Pictogram
+                    <Pictogram
                         progress={progress}
                         count={70}
                         groups={groupDict}
                         numRows={8}
                         width={400}
                         element={'section0'}>
-                    </Pictogram> */}
+                    </Pictogram>
                 </div>
             </div>
         </div>
